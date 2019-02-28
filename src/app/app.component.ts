@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'angular6-movie-app';
+	title = "Tom's Angular 6/7 Batman Movie App";
 }

@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/app/styles/css-reset";
+@import "/app/styles/globals";
+@import "/app/styles/mixins";
+
+h1, p, span {
+  color: $darkGrey;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+}

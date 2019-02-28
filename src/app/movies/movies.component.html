@@ -1,0 +1,36 @@
+<div class="decades-toggle-container">
+  <ul>
+    <li (click)="setDecade('2000')" 
+        [class.active]="activeBtn === '2000'">
+      <span>2000's</span>
+    </li>
+    <li (click)="setDecade('1990')"
+        [class.active]="activeBtn === '1990'">
+      <span>1990's</span>
+    </li>
+  </ul>
+</div>
+
+<ul>
+  <li class="card" *ngFor="let movie of movies">
+    <div class="poster-container">
+      <img src="{{movie.poster}}" />
+    </div>
+    <div class="content-container">
+      <div class="title-container">
+        <p>{{movie.title}}</p>
+      </div>
+      <div class="metadata-container">
+        <span>{{movie.rated}}</span>
+        <span>{{movie.runtime}}</span>
+        <span>{{movie.released}}</span>
+      </div>
+      <div class="plot-container">
+        <p>{{movie.plot}}</p>
+      </div>
+      <div class="link-container">
+        <a href="https://www.imdb.com/title/{{movie.imdbID}}" target="_blank">View on IMDB</a>
+      </div>
+    </div>
+  </li>
+</ul>

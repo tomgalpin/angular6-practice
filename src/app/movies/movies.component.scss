@@ -1,0 +1,116 @@
+.decades-toggle-container {
+  ul {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    li {
+      background-color: $decadesInactiveGreyBG;
+      border: 1px solid $decadesInactiveGreyBorder;
+      padding: 15px 27px;
+      text-decoration: none;
+      span {
+        color: $decadesInactiveGreyBorder;
+      }
+      &.active {
+        background-color: $decadesActiveBG;
+        border: 1px solid $decadesActiveBG;
+        @include box-shadow(0px, 1px, 3px, 0px, rgba(0,0,0,0.2));
+        span {
+          color: $white;
+        }
+      }
+      &:first-child {
+        border-radius: 6px 0 0 6px;
+      }
+      &:last-child {
+        border-radius: 0 6px 6px 0;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.card {
+  background-color: $cardBG;
+  border: 2px solid $darkGrey;
+  border-radius: 8px;
+  display: flex;
+  padding: 16px;
+  margin-bottom: 30px;
+  &:last-child { margin-bottom: 0px; }
+  .poster-container {
+    img {
+      width: 140px;
+      height: 208px;
+      border-radius: 8px;
+      @include box-shadow(0px, 2px, 4px, 0px, rgba(0,0,0,0.5));
+    }
+  }
+  .content-container {
+    margin-left: 25px;
+    position: relative;
+  }
+  .title-container {
+    border-bottom: 2px solid $lightGreyBorder;
+    padding-bottom: 9px;
+    margin-bottom: 5px;
+    p {
+      font-family: Helvetica;
+      font-size: 24px;
+      line-height: 18px;
+    }
+  }
+  .metadata-container {
+    display: flex;
+    margin-bottom: 13px;
+    span {
+      font-size: 14px;
+      line-height: 24px;
+      &:first-child {
+        color: $lightGreyFont;
+        border: 1px solid $lightGreyBorder;
+        border-radius: 5px;
+        font-family: Courier;
+        margin-right: 16px;
+        padding: 2px 9px;
+        line-height: 18px
+      }
+      &:nth-child(2) {
+        font-family: Arial;
+        flex: 1;
+      }
+      &:last-child {
+        font-family: Helvetica;
+      }
+    }
+  }
+  .plot-container {
+    p {
+      font-family: Helvetica;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .link-container {
+    a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $yellow;
+      border-radius: 4px;
+      padding: 14px 45px;
+      font-family: Helvetica;
+      font-size: 16px;
+      font-weight: bold;
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: inherit;
+      }
+    }
+  }
+}
