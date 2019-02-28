@@ -5,6 +5,7 @@ A simple App using Angular 6/7 and the OMDB Api
 1. Difficulty centered around learning:
   * Learning Angular 6/7 conventions
   * Observables vs. Promises
+  * Typescript 
 2. I did not make it responsive.
 3. I did not add FE and e2e tests
 4. I'm not sure why there was a need to pull all the movie posters locally, as they seemed to work fine when being pulled from OMDB.  So I did not do this part.
