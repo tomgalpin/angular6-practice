@@ -3,8 +3,8 @@ A simple App using Angular 6/7 and the OMDB Api
 
 ## Notes: 
 1. Difficulty centered around learning:
-    A.  Learning Angular 6/7 conventions
-    B.  Observables vs. Promises
+  i.  Learning Angular 6/7 conventions
+  ii.  Observables vs. Promises
 2. I did not make it responsive.
 3. I did not add FE and e2e tests
 4. I'm not sure why there was a need to pull all the movie posters locally, as they seemed to work fine when being pulled from OMDB.
@@ -18,11 +18,11 @@ A simple App using Angular 6/7 and the OMDB Api
 ## Guidelines:
 1. Display a vertical list of ten movies which can also be filtered by decade.
 2. A UI mockup can be found in the included moviemock.sketch file (or moviemock.pdf if you don't have Sketch).
-    A.  Only one movie is shown in the mockup, but use that as a template for the other 9.
+  i. Only one movie is shown in the mockup, but use that as a template for the other 9.
 3. Using the first 10 results of this api search for batman movies:
-    A.  http://www.omdbapi.com/?s=Batman
+  i. http://www.omdbapi.com/?s=Batman
 4. Take those results and look up details for each movie returned using this api pattern:
-    A.  http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
+  i. http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
 5. Images will be blocked from hotlinking. Manually download all of those images to the project first, then reference them locally (parse the url string from the response).
 6. Build using Angular.js version [1.5.8] or 2.x/6 and SASS compiled to CSS. Build at least one AngularJS component. Make sure your code is supported by Chrome, FF, and IE11.
 7. Publish your completed project to a github repo provide us with a link.
