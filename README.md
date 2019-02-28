@@ -7,7 +7,7 @@ A simple App using Angular 6/7 and the OMDB Api
   * Observables vs. Promises
 2. I did not make it responsive.
 3. I did not add FE and e2e tests
-4. I'm not sure why there was a need to pull all the movie posters locally, as they seemed to work fine when being pulled from OMDB.
+4. I'm not sure why there was a need to pull all the movie posters locally, as they seemed to work fine when being pulled from OMDB.  So I did not do this part.
 
 ## Areas of Improvement:
 1. Add testing/learn Jasmine and Karma
@@ -23,7 +23,7 @@ A simple App using Angular 6/7 and the OMDB Api
   * http://www.omdbapi.com/?s=Batman
 4. Take those results and look up details for each movie returned using this api pattern:
   * http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
-5. Images will be blocked from hotlinking. Manually download all of those images to the project first, then reference them locally (parse the url string from the response).
+5. `I DID NOT DO THIS ONE, AS THE IMAGES WORKED FINE FROM OMDB:` Images will be blocked from hotlinking. Manually download all of those images to the project first, then reference them locally (parse the url string from the response).
 6. Build using Angular.js version [1.5.8] or 2.x/6 and SASS compiled to CSS. Build at least one AngularJS component. Make sure your code is supported by Chrome, FF, and IE11.
 7. Publish your completed project to a github repo provide us with a link.
 
@@ -46,8 +46,6 @@ A simple App using Angular 6/7 and the OMDB Api
     │     ├── app.component.ts
     │     ├── app.module.ts               # Parent Angular file
     │     └── movies.service.ts           # API GET service to OMDB Api
-    ├── /assets
-    │     └── /images
     ├── index.html
     └──  styles.scss
 
