@@ -1,3 +1,7 @@
+@import "../styles/css-reset";
+@import "../styles/globals";
+@import "../styles/mixins";
+
 .decades-toggle-container {
   ul {
     margin-bottom: 40px;
