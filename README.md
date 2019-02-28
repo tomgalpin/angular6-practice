@@ -9,7 +9,7 @@ A simple App using Angular 6/7 and the OMDB Api
 2. I did not make it responsive.
 3. I did not add FE and e2e tests
 4. I'm not sure why there was a need to pull all the movie posters locally, as they seemed to work fine when being pulled from OMDB.  So I did not do this part.
-5.  Difficulty in figuring out how to deploy it to githubpages.
+5.  Difficulty in figuring out how to deploy it to githubpages; for the time being, I haven't deployed it.
 
 ## Areas of Improvement:
 1. Add testing/learn Jasmine and Karma
@@ -27,7 +27,7 @@ A simple App using Angular 6/7 and the OMDB Api
   * http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
 5. `I DID NOT DO THIS ONE, AS THE IMAGES WORKED FINE FROM OMDB:` Images will be blocked from hotlinking. Manually download all of those images to the project first, then reference them locally (parse the url string from the response).
 6. Build using Angular.js version [1.5.8] or 2.x/6 and SASS compiled to CSS. Build at least one AngularJS component. Make sure your code is supported by Chrome, FF, and IE11.
-7. Publish your completed project to a github repo provide us with a link.
+7. `For the time being, I haven't deployed it;` Publish your completed project to a github repo provide us with a link.
 
 ## Structure
     .
